@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSubs - Build A Sub</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../Images/header-image.png" alt="SuperSubs Logo">
+      </a>
+      <div class="nav-con">
+        <ul>
+          <a href="../index.html"><li>Home Page</li></a>
+          <a href="Pages/build.html"><li class="active">Build a Sub</li></a>
+          <a href="../Pages/checkout.html"><li>Checkout</li></a>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="build-a-sub">
+    <h2>Build A Sub</h2>
+    <form>
+      <label for="sub-name">Sub Name:</label>
+      <input type="text" id="sub-name" name="sub-name">
+      <label for="base-bread">Base Bread:</label>
+      <select id="base-bread" name="base-bread">
+        <option value="bread1">White Bread</option>
+        <option value="bread2">Wheat Bread</option>
+        <option value="bread3">Rye Bread</option>
+        <option value="bread4">Brown Bread</option>
+        <option value="bread5">Whole Grain Bread</option>
+        
+      </select>
+      <label for="toppings">Toppings (Select at least 5):</label>
+      <select id="toppings" name="toppings" multiple>
+        <option value="topping1">Tomato</option>
+        <option value="topping2">Onion</option>
+        <option value="topping3">Lettuce</option>
+        <option value="topping4">Ham</option>
+        <option value="topping5">Salami</option>
+        <option value="topping6">Chicken</option>
+        <option value="topping7">Crispy Chicken</option>
+        <option value="topping8">Beef Meatballs</option>
+        <option value="topping9">Pork Meatballs</option>
+        <option value="topping10">Feta</option>
+        <option value="topping11">Chedar Cheese</option>
+        <option value="topping12">Parmesan Cheese</option>
+        <option value="topping13">Mozzarella Cheese</option>
+        <option value="topping14">Jalapeno Peppers</option>
+        <option value="topping15">Pepperoni</option>
+        <option value="topping16">Pickled Cucumber</option>
+        <option value="topping17">Bell Pepper</option>
+        <option value="topping18">Red Onion</option>
+        <option value="topping19">Olive</option>
+        <option value="topping20">Spinach</option>
+        <option value="topping21">Bacon</option>
+        <option value="topping22">Egg</option>
+        <option value="topping23">Banana Pepper</option>
+        
+      </select>
+      <label for="sauce">Sauce (Select at least 1):</label>
+      <select id="sauce" name="sauce">
+        <option value="sauce1">Homemade Tomato Sauce </option>
+        <option value="sauce2">Tomato Sauce</option>
+        <option value="sauce3">BBQ Sauce</option>
+        <option value="sauce4">Buffalo Sauce</option>
+        <option value="sauce5">Mustard</option>
+        <option value="sauce6">Mayonnaise</option>
+        <option value="sauce7">Honey Mustard</option>
+        <option value="sauce8">Sweet Chilli</option>
+        
+      </select>
+      <button type="submit">Add to Order</button>
+    </form>
+    <div id="order-details">
+      <h3>Order Details:</h3>
+      <ul id="order-list">
+        <!-- The selected subs will be dynamically added here -->
+      </ul>
+      <h3>Total Cost: R<span id="total-cost">0.00</span></h3>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-well">
+        <img src="../Images/footer-logo.png" alt="SuperSubs Footer Logo">
+      </div>
+      <div class="footer-well">
+        &copy; 2023 SuperSubs. All rights reserved.
+      </div>
+      <div class="footer-well">
+        <a href="#"><img src="../Images/social-media-icon1.png" alt="Social Media Icon 1"></a>
+        <a href="#"><img src="../Images/social-media-icon2.png" alt="Social Media Icon 2"></a>
+        <a href="#"><img src="../Images/social-media-icon3.png" alt="Social Media Icon 3"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript and Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

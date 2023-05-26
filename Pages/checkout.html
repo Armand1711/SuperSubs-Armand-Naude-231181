@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSubs - Checkout</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../Images/header-image.png" alt="SuperSubs Logo">
+      </a>
+      <div class="nav-con">
+        <ul>
+          <a href="../index.html"><li>Home Page</li></a>
+          <a href="../Pages/build.html"><li>Build a Sub</li></a>
+          <a href="Pages/checkout.html"><li class="active">Checkout</li></a>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="checkout">
+    <h2>Checkout</h2>
+    <div id="order-summary">
+      <h3>Order Summary:</h3>
+      <ul id="order-list">
+        <!-- The order details from the Build page will be added here -->
+      </ul>
+    </div>
+    <form>
+      <label for="coupon-code">Coupon Code:</label>
+      <input type="text" id="coupon-code" name="coupon-code">
+      <button type="submit">Apply Coupon</button>
+    </form>
+    <h3>Total Cost: R<span id="total-cost">0.00</span></h3>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-well">
+        <img src="../Images/footer-logo.png" alt="SuperSubs Footer Logo">
+      </div>
+      <div class="footer-well">
+        &copy; 2023 SuperSubs. All rights reserved.
+      </div>
+      <div class="footer-well">
+        <a href="#"><img src="../Images/social-media-icon1.png" alt="Social Media Icon 1"></a>
+        <a href="#"><img src="../Images/social-media-icon2.png" alt="Social Media Icon 2"></a>
+        <a href="#"><img src="../Images/social-media-icon3.png" alt="Social Media Icon 3"></a>
+        <!-- Add more social media icons and links as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript and Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
